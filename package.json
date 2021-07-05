@@ -1,0 +1,18 @@
+{
+  "name": "TRILLO-2",
+  "version": "1.0.0",
+  "description": "nexter",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server --browser=chrome",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "aniekan",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
