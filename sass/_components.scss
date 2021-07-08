@@ -186,3 +186,51 @@ align-items: center;
  color: var(--color-grey-light-4);
  padding: 2.5rem;
 }
+
+////////////////
+//GALLERY
+.gallery {
+ display: flex;
+ 
+
+ &__item {
+  
+ }
+ &__photo {
+  width: 100%;
+  display: block;
+ }
+}
+
+//////////////////
+//OVERVIEW
+.overview {
+ display: flex;
+ 
+ &__heading {
+  //color: var();
+  //font-weight: 100;
+  //text-transform: uppercase;
+ }
+
+ &__stars {
+  margin-right: auto;
+ }
+ &__icon-star,
+ &__icon-location {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--color-primary);
+ }
+ &__location {}
+ &__rating {}
+ &__rating-count {
+  //color: #fff;
+  //background-color: var(--color-primary)
+ }
+ &__rating-average {
+  //color: #fff;
+  //background-color: var(--color-primary);
+ }
+
+}
