@@ -206,14 +206,18 @@ align-items: center;
 //OVERVIEW
 .overview {
  display: flex;
+ align-items: center;
+ border-bottom: 1px solid var(--color-grey-light-2);
  
  &__heading {
-  //color: var();
-  //font-weight: 100;
-  //text-transform: uppercase;
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
  }
 
  &__stars {
+  display: flex;
   margin-right: auto;
  }
  &__icon-star,
@@ -225,12 +229,26 @@ align-items: center;
  &__location {}
  &__rating {}
  &__rating-count {
-  //color: #fff;
-  //background-color: var(--color-primary)
+  color: #fff;
+  background-color: var(--color-primary)
  }
  &__rating-average {
-  //color: #fff;
-  //background-color: var(--color-primary);
+  color: #fff;
+  background-color: var(--color-primary);
  }
+
+}
+///////////////////
+//BUTTON INLINE
+.btn-inline {
+ border: none;
+ color: var(--color-primary );
+ font-size: inherit;
+ border-bottom: 1px solid currentColor;
+ padding-bottom: 2px;
+ display: inline-block;
+ background-color: transparent;
+ cursor: pointer; 
+ transition: all .2s;
 
 }

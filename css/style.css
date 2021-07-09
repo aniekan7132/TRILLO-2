@@ -181,13 +181,38 @@ body {
     display: block; }
 
 .overview {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2); }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem; }
   .overview__stars {
+    display: flex;
     margin-right: auto; }
   .overview__icon-star, .overview__icon-location {
     height: 1.5rem;
     width: 1.5rem;
     fill: var(--color-primary); }
+  .overview__rating-count {
+    color: #fff;
+    background-color: var(--color-primary); }
+  .overview__rating-average {
+    color: #fff;
+    background-color: var(--color-primary); }
+
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .2s; }
 
 .container {
   max-width: 120rem;
@@ -199,7 +224,7 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: 1px solid var(--color-grey-light-2);
   font-size: 1.4rem;
   display: flex;
   align-items: center;
