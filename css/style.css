@@ -291,6 +291,16 @@ body {
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
 
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem; }
+  .review__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -322,6 +332,7 @@ body {
   flex-grow: 1; }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
@@ -329,12 +340,10 @@ body {
 
 .description {
   padding: 3rem;
-  font-size: 1.4rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
   background-color: #fff;
   box-shadow: var(--shadow-light); }
 
 .user-review {
-  flex: 1;
-  background-color: crimson; }
+  flex: 1; }
