@@ -36,6 +36,10 @@ Grey dark 3: #999
  --line: 1px solid var(--color-grey-light-2);
 }
 
+$bp-largest: 75rem;   // 1200px
+$bp-large: 68.75rem;   // 1100px
+$bp-medium: 56.25rem; // 900
+
 * {
  margin: 0;
  padding: 0;
@@ -44,6 +48,10 @@ Grey dark 3: #999
 html {
  box-sizing: border-box;
  font-size: 62.5%;  //10 / 16 * 100 = 62.5%
+
+ @media only screen and (max-width) {
+  font-size: 50%;
+ }
 }
 
 *,
